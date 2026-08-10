@@ -1,0 +1,13 @@
+{
+  "logLevel": "warn",
+  "foldEmbeds": true,
+  "embedOnPaste": true,
+  "embedOnDrop": true,
+  "deleteSourceFiles": true,
+  "linkStyle": "wiki",
+  "maxEmbedFileSizeKB": 0,
+  "optimizeImages": false,
+  "optimizeFormat": "webp",
+  "optimizeQuality": 75,
+  "optimizeMaxWidth": 0
+}
