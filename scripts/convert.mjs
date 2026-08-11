@@ -44,7 +44,7 @@ const page = (title, body) => `<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${title}</title>
 <style>
-  body { max-width: 860px; margin: 2rem auto; padding: 0 1rem; font-family: -apple-system, system-ui, sans-serif; line-height: 1.6; color: #1a1a1a; }
+  body {background: #0d1117; max-width: 860px; margin: 2rem auto; padding: 0 1rem; font-family: -apple-system, system-ui, sans-serif; line-height: 1.6; color: #1a1a1a; }
   img { max-width: 100%; height: auto; border-radius: 4px; }
   pre { background: #0d1117; padding: 1rem; overflow-x: auto; border-radius: 6px; }
   code { background: #0d1117; padding: 0.15rem 0.35rem; border-radius: 4px; }
