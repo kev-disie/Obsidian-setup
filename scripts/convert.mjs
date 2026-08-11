@@ -46,8 +46,8 @@ const page = (title, body) => `<!DOCTYPE html>
 <style>
   body { max-width: 860px; margin: 2rem auto; padding: 0 1rem; font-family: -apple-system, system-ui, sans-serif; line-height: 1.6; color: #1a1a1a; }
   img { max-width: 100%; height: auto; border-radius: 4px; }
-  pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; border-radius: 6px; }
-  code { background: #f6f8fa; padding: 0.15rem 0.35rem; border-radius: 4px; }
+  pre { background: #0d1117; padding: 1rem; overflow-x: auto; border-radius: 6px; }
+  code { background: #0d1117; padding: 0.15rem 0.35rem; border-radius: 4px; }
   a { color: #0969da; }
   nav a { display: block; margin: 0.25rem 0; }
 </style>
