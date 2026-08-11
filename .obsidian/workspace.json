@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Welcome.md",
+                "file": "Setting Up obsidian For documentation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Welcome"
+              "title": "Setting Up obsidian For documentation"
             }
           }
         ]
@@ -192,6 +192,6 @@
   "active": "dd2cd1f7b038ef24",
   "lastOpenFiles": [
     "Obsidian Setup.png",
-    "Welcome.md"
+    "Setting Up obsidian For documentation.md"
   ]
 }
