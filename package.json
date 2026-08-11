@@ -1,0 +1,11 @@
+{
+  "name": "docs-site-builder",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/convert.mjs"
+  },
+  "dependencies": {
+    "markdown-it": "^14.1.0"
+  }
+}
