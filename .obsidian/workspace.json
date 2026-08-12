@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Setting Up obsidian For documentation.md",
+                "file": "Server-Side-Vulnerabilities/LAB-Unprotected Admin Functionality.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Setting Up obsidian For documentation"
+              "title": "LAB-Unprotected Admin Functionality"
             }
           }
         ]
@@ -189,9 +189,14 @@
       "image-baker:Open note image list": false
     }
   },
-  "active": "dd2cd1f7b038ef24",
+  "active": "0452d1bd4ddf2a65",
   "lastOpenFiles": [
-    "Obsidian Setup.png",
-    "Setting Up obsidian For documentation.md"
+    "Server-Side-Vulnerabilities.md",
+    "Server-Side-Vulnerabilities/Setting Up obsidian For documentation.md",
+    "Server-Side-Vulnerabilities/LAB-Unprotected Admin Functionality.md",
+    "Server-Side-Vulnerabilities",
+    "Setting Up obsidian For documentation.md",
+    "Untitled",
+    "Obsidian Setup.png"
   ]
 }
