@@ -206,6 +206,8 @@
   },
   "active": "346583d0b98dd82d",
   "lastOpenFiles": [
+    "scripts/convert.mjs",
+    "scripts",
     "Server-Side-Vulnerabilities/LAB-Unprotected Admin Functionality.md",
     "Server-Side-Vulnerabilities/LAB- Unprotected admin functionality with unpredictable URL.md",
     "Server-Side-Vulnerabilities.md",
