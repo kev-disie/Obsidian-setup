@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Server-Side-Vulnerabilities/LAB-User role controlled by request parameter.md",
+                "file": "Server-Side-Vulnerabilities/LAB03-User role controlled by request parameter.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LAB-User role controlled by request parameter"
+              "title": "LAB03-User role controlled by request parameter"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Server-Side-Vulnerabilities/LAB-User ID controlled by request parameter, with unpredictable user IDs.md",
+                "file": "Server-Side-Vulnerabilities/LAB01- Unprotected admin functionality with unpredictable URL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LAB-User ID controlled by request parameter, with unpredictable user IDs"
+              "title": "LAB01- Unprotected admin functionality with unpredictable URL"
             }
           }
         ],
@@ -204,12 +204,12 @@
       "image-baker:Open note image list": false
     }
   },
-  "active": "312e85ed81b3ec0f",
+  "active": "0452d1bd4ddf2a65",
   "lastOpenFiles": [
-    "Server-Side-Vulnerabilities/LAB-User role controlled by request parameter.md",
-    "Server-Side-Vulnerabilities/LAB-User ID controlled by request parameter, with unpredictable user IDs.md",
-    "Server-Side-Vulnerabilities/LAB-Unprotected Admin Functionality.md",
-    "Server-Side-Vulnerabilities/LAB- Unprotected admin functionality with unpredictable URL.md",
+    "Server-Side-Vulnerabilities/LAB02-Unprotected Admin Functionality.md",
+    "Server-Side-Vulnerabilities/LAB01- Unprotected admin functionality with unpredictable URL.md",
+    "Server-Side-Vulnerabilities/LAB03-User role controlled by request parameter.md",
+    "Server-Side-Vulnerabilities/LAB04-User ID controlled by request parameter, with unpredictable user IDs.md",
     "scripts/convert.mjs",
     "scripts",
     "Server-Side-Vulnerabilities.md",
