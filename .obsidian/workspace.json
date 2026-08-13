@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Server-Side-Vulnerabilities/LAB01- Unprotected admin functionality with unpredictable URL.md",
+                "file": "Server-Side-Vulnerabilities/LAB02- Unprotected admin functionality with unpredictable URL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LAB01- Unprotected admin functionality with unpredictable URL"
+              "title": "LAB02- Unprotected admin functionality with unpredictable URL"
             }
           }
         ],
@@ -206,8 +206,8 @@
   },
   "active": "0452d1bd4ddf2a65",
   "lastOpenFiles": [
-    "Server-Side-Vulnerabilities/LAB02-Unprotected Admin Functionality.md",
-    "Server-Side-Vulnerabilities/LAB01- Unprotected admin functionality with unpredictable URL.md",
+    "Server-Side-Vulnerabilities/LAB01-Unprotected Admin Functionality.md",
+    "Server-Side-Vulnerabilities/LAB02- Unprotected admin functionality with unpredictable URL.md",
     "Server-Side-Vulnerabilities/LAB03-User role controlled by request parameter.md",
     "Server-Side-Vulnerabilities/LAB04-User ID controlled by request parameter, with unpredictable user IDs.md",
     "scripts/convert.mjs",
