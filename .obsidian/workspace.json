@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "LAB- Unprotected admin functionality with unpredictable URL"
             }
+          },
+          {
+            "id": "af6ff00f73f309c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Server-Side-Vulnerabilities/LAB-User role controlled by request parameter.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "LAB-User role controlled by request parameter"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -204,12 +218,13 @@
       "image-baker:Open note image list": false
     }
   },
-  "active": "346583d0b98dd82d",
+  "active": "af6ff00f73f309c4",
   "lastOpenFiles": [
+    "Server-Side-Vulnerabilities/LAB-Unprotected Admin Functionality.md",
+    "Server-Side-Vulnerabilities/LAB-User role controlled by request parameter.md",
+    "Server-Side-Vulnerabilities/LAB- Unprotected admin functionality with unpredictable URL.md",
     "scripts/convert.mjs",
     "scripts",
-    "Server-Side-Vulnerabilities/LAB-Unprotected Admin Functionality.md",
-    "Server-Side-Vulnerabilities/LAB- Unprotected admin functionality with unpredictable URL.md",
     "Server-Side-Vulnerabilities.md",
     "Server-Side-Vulnerabilities/Setting Up obsidian For documentation.md",
     "Server-Side-Vulnerabilities",
