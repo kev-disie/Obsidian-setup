@@ -20,3 +20,77 @@ The screenshot above now shows the *account id=administrartor* changed from *wie
 
 The lab is solved!!
 
+### Root Cause
+This lab combines two overlapping issues: __Broken Object Level Authorization (BOLA/IDOR)__ and __Excessive Data Exposure__ 
+- As with the earlier lab,the account ending takes an *id* parameter directly from the request and returns whatever account matches it ---with no check that the requester actually  owns that account
+- The backend response for thee account page also includes the users password in *plaintext* in the raw HTTP response body the front- end simply doesn't render that field in the UI,so it goes unnoticed under normal use.
+- The application relied on the client (UI rendering logic )to hide sensitive data instead of the server withholding it in the first place.Anyone who can view the RAW response not just the page sees the password .
+- Combined,these two flaws mean an attacker doesn't just view another user's profile,they can harvest that user's actual login credentials and fully takeover the account
+
+### The Fix(::)
+Two separate controls are needed here  are Object-leve authorization AND field -level output filtering.Fixing only one still leaves the app vulnerable.
+
+1.  __Enforce ownership on the endpoint (same as before)__ 
+```
+user = get_authenticated_user(session)
+requested_resource = get_account_by_id(id)
+
+if requested_resource.owner_id != user.id:
+    return 403 Forbidden   # ownership check enforced server-side
+else:
+    return requested_resource
+```
+
+2. __Never Include sensitive fields in response unless explicitly required and never rely on the client to hide them__
+```
+def serialize_account(account):
+    # Explicit allow-list of fields — password/hash is never selected
+    return {
+        "username": account.username,
+        "email": account.email,
+        "bio": account.bio
+        # password / password_hash intentionally excluded
+    }
+
+return serialize_account(requested_resource)
+```
+
+The check must confirm onwership/entitlement and the response payload itself must never carry credential material even to the legitimate owner a password must never be echoed back post-authentication
+
+### Take aways:
+This lab demonstrates that broken accesss control and over exposed API responses compound each other :an IDOR that would otherwise leak profile by becomes full account takeover because the server also leaked a password field it should never have sent to the client at all."Hidden in the UI" is not the same as "not present in the response" anyone analysing the raw HTTP traffic bypasses front- end concealment 
+
+### Key notes:~
+To prevent such a vulnerability, the developer/server should implement:
+- Never trust client side parameter to determine which resource a user may access
+- Enforce ownership/authorization server-side on every request that returns another entity'data(see LAB:01 template)
+- Never rely on the front- end to hide sensitive fields,if the server sends it,assume can read read it nevertheless
+- Use an explicit allow- list of fields when serializing API/page responses donut return full object and filter client- side 
+- Passwords should never be returned in any response in any form not even as hashed or even to accounts own owner 
+- Store passwords using strong salted hash (e.g bcrypt/argon2 )so that even a server-side leak (DB dump,log etc)doesn't leak plaintext credentials
+- Periodically diff API/page responses against what the UI actually renders,to catch fields leaking into payloads unnecessarily
+
+The server should  have an authorization and output filtering atleast in  the format below:
+
+```
+Request
+   ↓
+Identify authenticated user
+   ↓
+Retrieve requested resource's actual owner (server-side)
+   ↓
+Does owner == authenticated user (or explicit grant)?
+      ↙       ↘
+    YES        NO
+     ↓          ↓
+Serialize      403
+via allow-list
+(exclude
+password/
+sensitive
+fields)
+     ↓
+  Return
+  response
+```
+
