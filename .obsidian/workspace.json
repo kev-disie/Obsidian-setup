@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Server-Side-Vulnerabilities/Access-control/LAB05-User ID controlled by request parameter with password disclosure.md",
+                "file": "Server-Side-Vulnerabilities/Access-control/Setting Up Burp suite cracked Pro version.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LAB05-User ID controlled by request parameter with password disclosure"
+              "title": "Setting Up Burp suite cracked Pro version"
             }
           },
           {
@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Server-Side-Vulnerabilities/Access-control/LAB04-User ID controlled by request parameter, with unpredictable user IDs.md",
+                "file": "Server-Side-Vulnerabilities/Authentication/LAB01-Username enumeration via different responses.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LAB04-User ID controlled by request parameter, with unpredictable user IDs"
+              "title": "LAB01-Username enumeration via different responses"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -203,12 +204,16 @@
       "image-baker:Open note image list": false
     }
   },
-  "active": "064c2d766ec2fcba",
+  "active": "6a8b2e1690b643bc",
   "lastOpenFiles": [
+    "Server-Side-Vulnerabilities/Access-control/Untitled.md",
+    "Server-Side-Vulnerabilities/Authentication/LAB01-Username enumeration via different responses.md",
+    "Server-Side-Vulnerabilities/Authentication",
+    "Authentication",
+    "Authentication",
+    "Server-Side-Vulnerabilities/Access-control/Setting Up Burp suite cracked Pro version.md",
     "Server-Side-Vulnerabilities/Access-control/LAB04-User ID controlled by request parameter, with unpredictable user IDs.md",
     "Server-Side-Vulnerabilities/Access-control/LAB05-User ID controlled by request parameter with password disclosure.md",
-    "Server-Side-Vulnerabilities/Access-control/Setting Up Burp suite cracked Pro version.md",
-    "Untitled",
     "Server-Side-Vulnerabilities/Untitled.md",
     "Server-Side-Vulnerabilities/Access-control/Setting Up obsidian For documentation.md",
     "Server-Side-Vulnerabilities/Access-control/LAB03-User role controlled by request parameter.md",
