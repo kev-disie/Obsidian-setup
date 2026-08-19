@@ -74,7 +74,7 @@ Location: /dashboard
 Browser → /dashboard
 ```
 
-### Root  
+### Root  Cause
 This is a __Username enumeration__ issue,rooted in the login endpoint leaking distinguishable behavior based on whether a submitted username exists
 
 - The application returns a different response depending on whether the *username* is valid,independent of whether the *password* is correct e.g "Invalid username" va "Invalid password" a different HTTP status code,a different response lenght or a different response time
