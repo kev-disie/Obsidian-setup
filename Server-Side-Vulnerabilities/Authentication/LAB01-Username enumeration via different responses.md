@@ -108,7 +108,7 @@ def login(username, password):
     )
 
     if user is None or not valid_password:
-    return "Invalid username or password", 200 # identical response either way       
+	    return "Invalid username or password", 200 # identical response either way       
 
     return authenticate(user)
 ```
