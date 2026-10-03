@@ -65,7 +65,12 @@ const GATE_SCRIPT = `
 </div>
 <script>
 (function () {
-  if (sessionStorage.getItem('gate-passed') === '1') return;
+  var overlay = document.getElementById('gate-overlay');
+  if (sessionStorage.getItem('gate-passed') === '1') {
+    if (overlay) overlay.remove();
+    document.body.style.overflow = '';
+    return;
+  }
   var challenges = ${JSON.stringify(CHALLENGES)};
   var pick = challenges[Math.floor(Math.random() * challenges.length)];
   document.getElementById('gate-q').textContent = pick.q;
@@ -79,7 +84,7 @@ const GATE_SCRIPT = `
   function check() {
     if (input.value.trim().toLowerCase() === pick.a.toLowerCase()) {
       sessionStorage.setItem('gate-passed', '1');
-      document.getElementById('gate-overlay').remove();
+      overlay.remove();
       document.body.style.overflow = '';
     } else {
       err.textContent = 'nope, try again';
