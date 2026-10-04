@@ -8,7 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "61b5e360f6a8beee",
+            "id": "8051a7acba456f78",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PwnZone-CTF-2026/OSINT/Blue Meridian.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Blue Meridian"
+            }
+          },
+          {
+            "id": "332fc7e0f9f31377",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,20 +33,6 @@
               },
               "icon": "lucide-file",
               "title": "LAB01-Unprotected Admin Functionality"
-            }
-          },
-          {
-            "id": "8051a7acba456f78",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Server-Side-Vulnerabilities/Authentication/LAB01-Username enumeration via different responses.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "LAB01-Username enumeration via different responses"
             }
           }
         ]
@@ -203,17 +203,21 @@
       "image-baker:Open note image list": false
     }
   },
-  "active": "61b5e360f6a8beee",
+  "active": "8051a7acba456f78",
   "lastOpenFiles": [
-    "Server-Side-Vulnerabilities/Authentication/Lab02-2FA simple bypass.md",
+    "Server-Side-Vulnerabilities/Access-control/LAB01-Unprotected Admin Functionality.md",
+    "PwnZone-CTF-2026/OSINT/Blue Meridian.md",
+    "PwnZone-CTF-2026/Untitled.md",
+    "PwnZone-CTF-2026/OSINT",
     "Server-Side-Vulnerabilities/Authentication/LAB01-Username enumeration via different responses.md",
+    "PwnZone-CTF-2026",
+    "Server-Side-Vulnerabilities/Authentication/Lab02-2FA simple bypass.md",
     "Server-Side-Vulnerabilities/Authentication/LAB03-Basic SSRF against another back-end system.md",
     "Juice-Shop-Challenges/Untitled.md",
     "Juice-Shop-Challenges/Score-board Challenge.md",
     "Server-Side-Vulnerabilities/Access-control/LAB05-User ID controlled by request parameter with password disclosure.md",
     "Juice-Shop-Challenges/Score-board-challenge/Score-board Challenge.md",
     "Server-Side-Vulnerabilities/Access-control/Score-board Challenge.md",
-    "Server-Side-Vulnerabilities/Access-control/LAB01-Unprotected Admin Functionality.md",
     "Server-Side-Vulnerabilities/Access-control/LAB04-User ID controlled by request parameter, with unpredictable user IDs.md",
     "Server-Side-Vulnerabilities/Authentication/u.md",
     "Server-Side-Vulnerabilities/Access-control/LAB02- Unprotected admin functionality with unpredictable URL.md",
